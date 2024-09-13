@@ -1,0 +1,1291 @@
+/* =========== common css =========== */
+
+/* -------- Google Fonts -------- */
+/* Barlow Condensed Font */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Barlow Condensed Font */
+
+/* Oswald Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+/* Oswald Fonts */
+
+/* -------- Google Fonts -------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+img {
+  vertical-align: middle;
+}
+ul,
+li,
+ol {
+  list-style: none;
+}
+a,
+ul,
+li,
+ol,
+div,
+p,
+span,
+br,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1320px;
+  margin: auto;
+}
+:root {
+  /* font root */
+  --barlow_condensed: "Barlow Condensed", sans-serif;
+  --oswald: "Oswald", sans-serif;
+  /* font root */
+  /* color root */
+  --red_button_color: #ff4655;
+  --white_color: #ffffff;
+  --navitem_color: #dddddd;
+  --box_black_backgroun_color: #212121;
+  --black_background: #121212;
+  --bottomboxcolor: #666666;
+  /* color root */
+}
+/* =========== common css =========== */
+/* =========== NavBar Css =========== */
+#header {
+  background-color: var(--black_background);
+  /* max-width: 1920px; */
+}
+.Header {
+  display: flex;
+  justify-content: space-between;
+  padding: 28px 0;
+  align-items: center;
+}
+.HeaderRight {
+  display: flex;
+}
+/* ----------- Header Logo Css ----------- */
+.HeaderLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.HeaderLogo__text {
+  font-size: 35px;
+  font-weight: 700;
+  font-family: var(--barlow_condensed);
+  color: var(--white_color);
+}
+.HeaderLogo__circle {
+  width: 9px;
+  height: 9px;
+  background-color: var(--red_button_color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-top: 28px;
+  margin-left: 10px;
+}
+/* ----------- Header Logo Css ----------- */
+/* ----------- Header Middle Css ----------- */
+.HeaderMenu {
+  display: flex;
+  margin-left: 60px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 60px;
+}
+.HeaderMenuUl {
+  display: flex;
+  column-gap: 30px;
+}
+.HeaderMenuUlLi a {
+  color: var(--navitem_color);
+  font-family: var(--oswald);
+  font-size: 16px;
+  font-weight: 400;
+}
+.HeaderMenuUlLi a:hover {
+  color: var(--red_button_color);
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+/* ----------- Header Middle Css ----------- */
+/* ----------- Header Irght Icon Css ----------- */
+.HeaderIcon {
+  display: flex;
+  align-items: center;
+  column-gap: 26px;
+}
+.HeaderIcon a {
+  color: var(--white_color);
+  vertical-align: middle;
+}
+.SignInBtn {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+.sign__text {
+  font-family: var(--oswald);
+  font-size: 16px;
+  font-weight: 400;
+}
+.HeaderIcon a:hover {
+  color: var(--red_button_color);
+  transition: all linear 0.3s;
+}
+/* .sign__text:hover {
+  color: var(--red_button_color);
+} */
+/* ----------- Header rght Icon Css ----------- */
+/* =========== NavBar Css =========== */
+/* =========== Banner Css ===========  */
+#Banner {
+  background-image: url(/Images/Banner/banner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.MainBanner {
+  padding: 103px 0;
+}
+/* --------- Banner Text CSS --------- */
+.BannerText {
+  padding-top: 267px;
+}
+.BannerText__heading {
+  color: var(--white_color);
+  font-size: 27px;
+  font-weight: 400;
+  font-family: var(--oswald);
+}
+.BannerText__heading2 {
+  font-size: 60px;
+  font-weight: 800;
+  font-family: var(--oswald);
+  color: var(--white_color);
+  display: flex;
+}
+.heading_lowline {
+  width: 90px;
+  margin-bottom: 17px;
+  margin-left: 25px;
+  border-bottom: 3px solid white;
+}
+.BannerText__p {
+  max-width: 523px;
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--oswald);
+  color: var(--white_color);
+}
+.BannerText__btn {
+  margin-top: 48px;
+  background-color: var(--white_color);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--oswald);
+  align-items: center;
+  width: 128px;
+  height: 50px;
+}
+.BannerText__btn:hover {
+  background-color: var(--red_button_color);
+  color: var(--white_color);
+  transition: ease-in-out 0.3s;
+  -webkit-transition: ease-in-out 0.3s;
+  -moz-transition: ease-in-out 0.3s;
+  -ms-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
+}
+/* --------- Banner Text CSS --------- */
+/* --------- Banner Bottom CSS --------- */
+.BannerSocialMedia {
+  display: flex;
+  column-gap: 20px;
+  margin-top: 301px;
+}
+.BannerSocialMedia {
+  display: flex;
+  column-gap: 20px;
+}
+.BannerSocialMedia a {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.15rem;
+  background-color: var(--white_color);
+  color: var(--black_background);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.BannerSocialMedia a:hover {
+  background-color: var(--red_button_color);
+  color: var(--white_color);
+  transition: ease-in-out 0.3s;
+  -webkit-transition: ease-in-out 0.3s;
+  -moz-transition: ease-in-out 0.3s;
+  -ms-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
+}
+/* --------- Banner Bottom CSS --------- */
+/* =========== Banner Css ===========  */
+/* =========== Community Part ===========  */
+#Community {
+  background-color: var(--black_background);
+  padding-top: 34px;
+  padding-bottom: 80px;
+}
+.CommunityHeader {
+  max-width: 518px;
+}
+.CommunityHearder__h4 {
+  font-size: 38px;
+  font-weight: 600;
+  font-family: var(--oswald);
+  color: var(--white_color);
+}
+.CommunityGamingPlatform {
+  display: flex;
+  column-gap: 82px;
+  margin-top: 57px;
+}
+
+.GamingPlatformlist__h4 {
+  color: var(--white_color);
+  font-size: 27px;
+  font-weight: 600;
+  font-family: var(--oswald);
+}
+.GamingPlatformlist__a {
+  margin-top: 7px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: var(--barlow_condensed);
+  color: var(--white_color);
+}
+.GamingPlatformlist__a i {
+  color: var(--red_button_color);
+  margin-right: 10px;
+}
+.GamingPlatform__p {
+  margin-top: 13px;
+  color: var(--white_color);
+  font-size: 18px;
+  font-weight: 400;
+  font-family: var(--oswald);
+}
+.BannerText__btn2 {
+  margin-top: 30px;
+  background-color: var(--box_black_backgroun_color);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--oswald);
+  align-items: center;
+  width: 128px;
+  height: 50px;
+  color: var(--white_color);
+  border: none;
+}
+.BannerText__btn2:hover {
+  background-color: var(--red_button_color);
+  transition: ease-in-out 0.3s;
+  -webkit-transition: ease-in-out 0.3s;
+  -moz-transition: ease-in-out 0.3s;
+  -ms-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
+}
+.CommunityPlatform_rating {
+  display: flex;
+  column-gap: 20px;
+  margin-top: 50px;
+}
+.RatingBox {
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  width: 315px;
+  height: 170px;
+  background-color: var(--box_black_backgroun_color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.RatingBox:hover {
+  background-color: var(--red_button_color);
+  color: var(--box_black_backgroun_color);
+  transition: ease-in-out 0.3s;
+}
+.Box_h3 {
+  font-size: 60px;
+  font-weight: 600;
+  font-family: var(--barlow_condensed);
+  color: var(--white_color);
+}
+.Box_p {
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--white_color);
+  font-family: var(--oswald);
+}
+/* =========== Community Part ===========  */
+/* =========== Popular Game CSS ===========  */
+#Populargame {
+  background-color: var(--black_background);
+  padding: 90px 0;
+}
+.Popular__lowerLine {
+  width: 120px;
+  height: 3px;
+  background-color: var(--red_button_color);
+  border: none;
+  position: absolute;
+  bottom: 10px;
+  left: 145px;
+}
+.PopularGame__bottomPart {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  position: relative;
+}
+.bottompartleft {
+  width: 651px;
+  height: 605px;
+  position: relative;
+}
+.bottomleft__ground {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 390px;
+  width: 651px;
+  background-color: var(--red_button_color);
+  clip-path: polygon(16% 0, 100% 0%, 85% 100%, 0% 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img__box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 631px;
+  width: 390px;
+}
+.bottomleft__overlayer {
+  position: absolute;
+  bottom: 0;
+  left: 118px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 22;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottompart__icon {
+  font-size: 2rem;
+  position: absolute;
+  right: 21px;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  color: #ffffff;
+}
+.graterthan {
+  border: 3px solid var(--white_color);
+  border-radius: 50%;
+  color: var(--white_color);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.graterthan:hover {
+  background-color: var(--red_button_color);
+  border: none;
+  transition: ease-in-out 0.3s;
+  -webkit-transition: ease-in-out 0.3s;
+  -moz-transition: ease-in-out 0.3s;
+  -ms-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
+}
+/* =========== Popular Game CSS ===========  */
+
+/* ============ LIVE Stream Css ============= */
+#LiveStrean {
+  padding: 90px 0;
+  background-color: var(--black_background);
+}
+.LiveHeader {
+  max-width: 446px;
+  display: flex;
+}
+.LiveHeader_h2 {
+  color: var(--white_color);
+  font-size: 38px;
+  font-weight: 600;
+  font-family: var(--oswald);
+  position: relative;
+}
+.LiveHeader_h2_lowerline {
+  width: 120px;
+  height: 3px;
+  background-color: var(--red_button_color);
+  border: none;
+  position: absolute;
+  bottom: 10px;
+  left: 140px;
+}
+.gamepart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gamephotocart1 {
+  position: relative;
+  margin-top: 76px;
+  position: relative;
+  width: 427px;
+  height: 275px;
+}
+.gamephotocart1:hover .gamephotocart1__img {
+  padding: 10px 0;
+}
+.gamephotocart1:hover .gamephotocart1__img {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  transition: ease-in-out 0.3s;
+  -webkit-transition: ease-in-out 0.3s;
+  -moz-transition: ease-in-out 0.3s;
+  -ms-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
+}
+.gamephotocart1__img {
+  filter: grayscale(100%);
+  width: 427px;
+  height: 275px;
+}
+
+.gamepartcart1_overlay {
+  padding: 23px 25px;
+  color: var(--white_color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.gamephotocart1:hover .Overlay__h4,
+.gamephotocart1:hover .Overlaycion__a,
+.gamephotocart1:hover .discription__h4,
+.gamephotocart1:hover .discription__h42 {
+  color: var(--red_button_color);
+  transition: ease-in-out 0.3s;
+}
+.Overlay__h4 {
+  font-size: 22px;
+  font-family: var(--barlow_condensed);
+  font-weight: 600;
+
+  color: var(--white_color);
+}
+.overlayicon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 78%;
+}
+.Overlaycion__a {
+  color: var(--white_color);
+}
+/* .Overlaycion__a{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+} */
+.gamepartcart1_overlay i {
+  font-size: 4.37rem;
+}
+.overlayDownWrraper {
+  align-content: end;
+}
+
+.OverlayDiscription {
+  display: flex;
+  justify-content: space-between;
+}
+.discription__h4 {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: var(--oswald);
+  color: var(--white_color);
+}
+.discription__h42 {
+  display: flex;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--oswald);
+  color: var(--white_color);
+  position: relative;
+}
+.overlaycircle {
+  position: absolute;
+  bottom: 4px;
+  right: 29px;
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  background-color: var(--red_button_color);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+/* part 2  */
+/* .img--chenge {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+}
+.photocart1--change {
+  width: 426px;
+  height: 295px;
+} */
+/* part 2  */
+
+/* gamepartBottom Css */
+.gamepartBottom__h4 {
+  margin-top: 60px;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: var(--barlow_condensed);
+  text-align: center;
+  color: var(--white_color);
+}
+.BotoomMatchbox {
+  margin-top: 49px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.BottomMatchbox1 {
+  width: 426px;
+  padding: 10px 5px;
+  display: flex;
+  column-gap: 121px;
+  align-items: center;
+  background-color: var(--box_black_backgroun_color);
+  clip-path: polygon(0 0, 100% 0, 91% 100%, 0% 100%);
+}
+.BottomMatchbox1:hover,
+.BottomMatchbox1:hover .BottomMatchbox1__h4 {
+  background-color: var(--red_button_color);
+  transition: ease-in-out 0.5s;
+  -webkit-transition: ease-in-out 0.5s;
+  -moz-transition: ease-in-out 0.5s;
+  -ms-transition: ease-in-out 0.5s;
+  -o-transition: ease-in-out 0.5s;
+}
+.BottomMatchbox1__h4 {
+  font-size: 32px;
+  font-weight: 500;
+  font-family: var(--barlow_condensed);
+  color: var(--white_color);
+}
+.BottomMatchBoTime__h4 {
+  font-size: 40px;
+  font-weight: 500;
+  font-family: var(--oswald);
+  color: var(--white_color);
+}
+.box1--change {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 9% 100%);
+  display: flex;
+  justify-content: flex-end;
+}
+/* gamepartBottom Css */
+/* ============ LIVE Stream CSS ============= */
+/* ============ Top Game Black Friday CSS ============= */
+#BlackFriday {
+  padding: 90px 0;
+  background-color: var(--black_background);
+}
+.fridayHeader {
+  display: flex;
+  justify-content: flex-end;
+}
+.LiveHeaderH2--change {
+  text-align: right;
+}
+.black--friday {
+  bottom: 10px;
+  left: 110px;
+}
+.SaleBox {
+  margin-top: 47px;
+  display: flex;
+  justify-content: space-between;
+}
+.SaleBoxPart1 {
+  width: 315px;
+  height: 566px;
+}
+.SalePart1Img {
+  width: 315px;
+  height: 430px;
+}
+.SaleBoxPart1__h4 {
+  margin-top: 18px;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: var(--barlow_condensed);
+  color: var(--white_color);
+}
+.SaleBoxPart1__h5 {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--oswald);
+  color: var(--bottomboxcolor);
+}
+.SalePartBox1__Bottom {
+  margin-top: 20px;
+  display: flex;
+  column-gap: 10px;
+}
+.percentagebox {
+  background-color: var(--red_button_color);
+  color: var(--white_color);
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var(--oswald);
+  display: inline-block;
+}
+.dollarcut {
+  color: var(--bottomboxcolor);
+}
+.dollar {
+  color: var(--bottomboxcolor);
+}
+
+/* bottompart */
+.Salepartbottompart {
+  padding-top: 66px;
+}
+.BottomPart__h4 {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: var(--barlow_condensed);
+  color: var(--white_color);
+}
+.BottomPartBanner {
+  margin-top: 51px;
+  background-color: var(--box_black_backgroun_color);
+  display: flex;
+  justify-content: space-between;
+}
+.BottomPartBanner__left {
+  padding: 24px 0 152px 44px;
+  max-width: 603px;
+}
+.leftpart__h5 {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--oswald);
+  color: var(--red_button_color);
+}
+.leftpart__h4 {
+  margin-top: 15px;
+  max-width: 580px;
+  font-size: 38px;
+  font-weight: 600;
+  font-family: var(--barlow_condensed);
+  color: var(--white_color);
+}
+.leftpart__p {
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--oswald);
+  color: var(--bottomboxcolor);
+}
+.leftpart__btn {
+  margin-top: 25px;
+  background-color: var(--black_background);
+  border: none;
+  padding: 13px 31px;
+}
+.leftpart__btn:hover a {
+  color: var(--red_button_color);
+  transition: ease-in-out 0.3s;
+  -webkit-transition: ease-in-out 0.3s;
+  -moz-transition: ease-in-out 0.3s;
+  -ms-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
+}
+.leftpart__btn a {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--oswald);
+  color: var(--white_color);
+}
+.BottomRight__img {
+  margin-top: 23px;
+  margin-right: 111px;
+  width: 426px;
+  height: 370px;
+}
+/* bottompart */
+/* ============ Top Game Black Friday CSS ============= */
+/* <!--============== Accesories Css ==============  --> */
+#Accesories {
+  background-color: var(--black_background);
+  padding: 100px 0;
+}
+.Accesories_lowerline {
+  width: 120px;
+  height: 3px;
+  background-color: var(--red_button_color);
+  border: none;
+  position: absolute;
+  bottom: 10px;
+  left: 205px;
+}
+/* ------accesories box css start from ----- */
+.Accesories {
+  position: relative;
+  margin-top: 102px;
+  display: flex;
+  justify-content: space-between;
+}
+.lefticon {
+  position: absolute;
+  top: 50%;
+  left: -63px;
+  background-color: var(--red_button_color);
+  color: var(--white_color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lefticon i {
+  font-size: 1.5rem;
+}
+.rigthicon {
+  position: absolute;
+  top: 50%;
+  right: -63px;
+  background-color: var(--red_button_color);
+  color: var(--white_color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rigthicon i {
+  font-size: 1.5rem;
+}
+.AccesoriesBox1 {
+  background-color: var(--box_black_backgroun_color);
+  width: 315px;
+  padding: 23px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Box1Header {
+  font-size: 40px;
+  font-weight: 500;
+  font-family: var(--oswald);
+  color: var(--white_color);
+}
+
+.box1__img {
+  margin: 7px;
+  vertical-align: middle;
+}
+.Box1lowerHeading {
+  margin-top: 45px;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: var(--oswald);
+  color: var(--white_color);
+}
+.Box1lower {
+  margin-top: 7px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--oswald);
+  color: var(--red_button_color);
+}
+/* ------accesories box css start from ----- */
+/* <!--============== Accesories Css ==============  --> */
+/* <!--============== Elite team Css ==============  --> */
+#EliteTeam {
+  background-color: #191919;
+  padding: 100px 0;
+}
+.Lower--change {
+  bottom: 11px;
+  left: 149px;
+}
+.EliteTeamPart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 30px;
+}
+/* Image tag */
+.Teampart {
+  position: relative;
+  width: 650x;
+  height: 428px;
+  overflow: hidden;
+}
+.Teampart:hover .Teampart__overlay {
+  bottom: 0;
+  left: 0;
+  transition: ease-in-out 0.4s;
+  -webkit-transition: ease-in-out 0.4s;
+  -moz-transition: ease-in-out 0.4s;
+  -ms-transition: ease-in-out 0.4s;
+  -o-transition: ease-in-out 0.4s;
+}
+.Teampart__img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+.Teampart:hover .Teampart__img {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  transition: ease-in-out 0.3s;
+  -webkit-transition: ease-in-out 0.3s;
+  -moz-transition: ease-in-out 0.3s;
+  -ms-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
+}
+.Teampart__overlay {
+  position: absolute;
+  bottom: -149px;
+  left: 0;
+  background-color: rgb(255, 255, 255, 25%);
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+.overlayWrapper {
+  width: 100%;
+  display: flex;
+  align-items: end;
+  margin: 40px 58px 30px 30px;
+}
+
+.overlayLeftSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: start;
+  max-width: 300px;
+}
+.leftside__h4 {
+  font-size: 30px;
+  font-family: var(--barlow_condensed);
+  font-weight: 600;
+  color: var(--white_color);
+}
+.Leftside__p {
+  margin-top: 6px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-family: var(--oswald);
+  font-weight: 400;
+  color: var(--white_color);
+}
+.leftside__btn {
+  background-color: var(--black_background);
+  height: 33px;
+  width: 105px;
+  font-family: var(--oswald);
+  font-weight: 400;
+  color: var(--white_color);
+  border: none;
+  outline: none;
+}
+.leftside__btn:hover {
+  background-color: var(--red_button_color);
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+.OverlayRightside {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  column-gap: 20px;
+  width: 100%;
+  font-size: 1rem;
+  color: var(--white_color);
+}
+.OverlayRightside__a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: var(--red_button_color);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  color: var(--white_color);
+}
+.rightSideIcon {
+  color: var(--white_color);
+}
+.Teampart__overlay:hover {
+  bottom: 215px;
+  left: 0;
+}
+/* Image tag */
+/* <!--============== Elite team  Css ==============  --> */
+#Question {
+  background-color: var(--black_background);
+  padding: 43px 0 213px 0;
+}
+.liveHeader--change {
+  max-width: 493px;
+}
+.Lowerline--change {
+  bottom: 10px;
+  left: 351px;
+}
+.discription {
+  margin-top: 92px;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+.discription1 {
+  width: 660px;
+  border-right: 2px solid var(--bottomboxcolor);
+  border-bottom: 2px solid var(--bottomboxcolor);
+}
+.discriptionWrapper {
+  display: flex;
+  column-gap: 42px;
+  margin-bottom: 75px;
+}
+.numberbox {
+  width: 70px;
+  height: 70px;
+  background-color: var(--red_button_color);
+  color: var(--white_color);
+  font-size: 38px;
+  font-weight: 600;
+  font-family: var(--barlow_condensed);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.discriptionheading {
+  color: var(--red_button_color);
+  font-size: 22px;
+  font-weight: 600;
+  font-family: var(--barlow_condensed);
+}
+.discription__p {
+  margin-top: 11px;
+  max-width: 426px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--oswald);
+  color: var(--bottomboxcolor);
+}
+/* -----2------ */
+.discription2 {
+  width: 660px;
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 2px solid var(--bottomboxcolor);
+}
+
+/* -----2------ */
+/* -----3------ */
+.discription3 {
+  display: flex;
+  justify-content: start;
+  width: 660px;
+  height: 184px;
+  border-right: 2px solid var(--bottomboxcolor);
+}
+.wrapper3--change {
+  margin-top: 75px;
+}
+/* -----3------ */
+/* -------4------ */
+.discription4 {
+  display: flex;
+  justify-content: flex-end;
+  width: 660px;
+  height: 184px;
+}
+.wrapper4--change {
+  margin-top: 75px;
+}
+/* -------4------ */
+/* ========footer Css =========== */
+#footer {
+  background-color: #191919;
+  padding: 112px 0 70px 0;
+}
+.fotterbox {
+  position: relative;
+}
+.suscriberBox {
+  position: absolute;
+  top: -195px;
+  left: 0;
+  padding: 35px 16px 35px 30px;
+  background-color: var(--red_button_color);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.BoxHeading {
+  max-width: 725px;
+  color: var(--white_color);
+  font-size: 40px;
+  font-weight: 600;
+  font-family: var(--barlow_condensed);
+  text-transform: uppercase;
+}
+.searchInput {
+  position: relative;
+  height: 40px;
+  width: 400px;
+}
+.subscriberinput {
+  padding: 0 0 0 10px;
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--barlow_condensed);
+  background-color: var(--white_color);
+  border: 1px solid var(--bottomboxcolor);
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+.suscribeBtn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 117px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--barlow_condensed);
+  color: var(--white_color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black_background);
+  border: none;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  z-index: 33;
+}
+.suscribeBtn:hover {
+  border: 2px solid var(--white_color);
+  background-color: var(--red_button_color);
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+}
+.fotterBottom {
+  padding-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo--cng {
+  justify-content: start;
+}
+.text--chang {
+  font-size: 35px;
+  font-family: var(--barlow_condensed);
+  font-weight: 700;
+}
+.circle--change {
+  height: 9px;
+  width: 9px;
+}
+.bottom__summury {
+  margin-top: 30px;
+  max-width: 449px;
+  font-size: 16px;
+  font-family: var(--oswald);
+  font-weight: 400;
+  color: var(--bottomboxcolor);
+}
+.bottom__icon {
+  margin-top: 59px;
+  display: flex;
+  column-gap: 10px;
+  color: var(--white_color);
+}
+.bottom__icon a {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--box_black_backgroun_color);
+  color: var(--white_color);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.bottom__icon a:hover {
+  background-color: var(--red_button_color);
+  transition: ease-in-out 0.3s;
+  -webkit-transition: ease-in-out 0.3s;
+  -moz-transition: ease-in-out 0.3s;
+  -ms-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
+}
+.bottom2 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.bottom2Ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.bottom2__h4 {
+  color: var(--white_color);
+  font-size: 25px;
+  font-family: var(--barlow_condensed);
+  font-weight: 600;
+}
+.bottom2__links {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--oswald);
+  color: var(--bottomboxcolor);
+}
+.links--chng {
+  color: var(--red_button_color);
+}
+.bottom2__links:hover {
+  color: var(--white_color);
+  transition: ease-in-out 0.3s;
+  -webkit-transition: ease-in-out 0.3s;
+  -moz-transition: ease-in-out 0.3s;
+  -ms-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
+}
+
+.bottom3__h3 {
+  font-size: 25px;
+  font-family: var(--barlow_condensed);
+  font-weight: 600;
+  color: var(--white_color);
+}
+.fotterimg {
+  margin-top: 30px;
+  max-width: 315px;
+}
+.fotterlowerpart {
+  border-top: 1px solid var(--bottomboxcolor);
+  padding: 50px 0 25px 0;
+  color: var(--white_color);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footterlowerspan {
+  color: var(--red_button_color);
+  font-size: 20px;
+  font-family: var(--barlow_condensed);
+  font-weight: 400;
+}
+/* ========footer Css =========== */
