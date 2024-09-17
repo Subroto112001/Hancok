@@ -44,10 +44,10 @@ h6 {
   margin: 0;
   padding: 0;
 }
-.container {
+/* .container {
   max-width: 1320px;
   margin: auto;
-}
+} */
 :root {
   /* font root */
   --barlow_condensed: "Barlow Condensed", sans-serif;
